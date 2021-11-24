@@ -39,7 +39,7 @@ function richiestaNumeri() {
     } else if (arrayNumeriUtente.length == '0') {
         container.innerHTML = `<h2>Non hai memorizzato nessun numero!</h2> <h2>Numeri da memorizzare: ${arrayNumeriRandom}</h2>`;
     } else {
-        container.innerHTML = `<h2>Hai memorizzato tutti i ${arrayNumeriUtente.length} numeri!</h2>
+        container.innerHTML = `<h2>Hai memorizzato ${arrayNumeriUtente.length} numeri!</h2>
         <h2>Numeri da memorizzare: ${arrayNumeriRandom}</h2>
         <h2>Numeri memorizzati: ${arrayNumeriUtente}</h2>`;
     }
