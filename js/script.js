@@ -36,19 +36,14 @@ function richiestaNumeri() {
     console.log(arrayNumeriUtente);
 
     if (arrayNumeriUtente.length == '1') {
-        console.log('Hai indovinato un solo numero!');
         container.innerHTML = `Hai indovinato un solo numero!
-        Numeri da memorizzare: <h2>${arrayNumeriRandom}</h2>
-        Numero memorizzato: <h2>${arrayNumeriUtente}</h2>`;
+        <h2>Numeri da memorizzare: ${arrayNumeriRandom}</h2>
+        <h2>Numero memorizzato: ${arrayNumeriUtente}</h2>`;
     } else if (arrayNumeriUtente.length == '0') {
-        console.log('Non hai memorizzato nessun numero!');
-        container.innerHTML = `Non hai memorizzato nessun numero!
-        Numeri da memorizzare: <h2>${arrayNumeriRandom}</h2>`;
+        container.innerHTML = `Non hai memorizzato nessun numero! <h2>Numeri da memorizzare: ${arrayNumeriRandom}</h2>`;
     } else {
-        console.log('Hai memorizzato ' + arrayNumeriUtente.length + ' numeri!');
-        container.innerHTML = `Hai memorizzato ${arrayNumeriUtente.length} numeri!
-        Numeri da memorizzare: <h2>${arrayNumeriRandom}</h2>
-        Numeri memorizzati: <h2>${arrayNumeriUtente}</h2>`;
-
+        container.innerHTML = `Hai memorizzato tutti i ${arrayNumeriUtente.length} numeri!
+        <h2>Numeri da memorizzare: ${arrayNumeriRandom}</h2>
+        <h2>Numeri memorizzati: ${arrayNumeriUtente}</h2>`;
     }
 }
